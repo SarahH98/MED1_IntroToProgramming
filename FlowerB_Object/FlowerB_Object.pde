@@ -2,7 +2,6 @@ Flower myFlower;
 
 void setup() {
   size(800,800);
-  background(#0F0F0F);
   
   int r_bloom = 100;
   int n_bloom = 6;
@@ -14,5 +13,8 @@ void setup() {
 }
 
 void draw() {
+  background(#0F0F0F);
   myFlower.display();
+  
+  myFlower.bounce();
 }
